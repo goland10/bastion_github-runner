@@ -71,7 +71,7 @@ resource "google_compute_router_nat" "nat" {
 ############################
 
 resource "google_compute_firewall" "iap_tunnel_ingress" {
-name = "gha-runner-iap-ingress"
+name = "allow-ingress-from-iap"
 network = data.google_compute_network.vpc.name
 
 direction = "INGRESS"
