@@ -7,7 +7,7 @@ Key features:
 - Runner VM has **no public IP** and connects to GKE/EKS via private access.  
 - **Minimal IAM** permissions for GKE/EKS deployments and GitHub secret access.  
 - Firewall rules configured for **IAP tunnel** access.  
-- **Cloud NAT** enabled for outbound internet access from private subnet.  
-- VM installs **Google Cloud SDK**, **kubectl**, **Helm**, and the **GitHub Actions runner** automatically.  
+- **Cloud NAT/NAT Gateway** enabled for outbound internet access from private subnet.  
+- VM equiped with **gcloud**, **kubectl**, **Helm**, **GitHub Actions runner** etc to fullfil all the tasks.  
 
 ---
