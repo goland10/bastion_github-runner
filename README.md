@@ -11,3 +11,5 @@ Key features:
 - VM equiped with **gcloud**, **kubectl**, **Helm**, **GitHub Actions runner** etc to fullfil all the tasks.  
 
 ---
+
+![Architecture Diagram](architecture.png)
