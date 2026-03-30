@@ -96,7 +96,7 @@ resource "google_compute_firewall" "runner_egress" {
 
   allow {
     protocol = "tcp"
-    ports    = ["443", "80"]
+    ports    = ["443"]
   }
 
   allow {
