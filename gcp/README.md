@@ -19,7 +19,8 @@ Key features:
 Before using this Terraform project, ensure the following:  
 1. A **GCP project** with billing enabled.  
 2. An **existing VPC network and subnet** where the runner VM will reside.  
-3. **Terraform CLI** installed on your workstation.  
+3. **Terraform CLI** installed on your workstation.
+4. **Secret Manager API enabled** on your GCP project
 4. **GitHub Personal Access Token (PAT)** stored in **Secret Manager**.  
 
 ### Generating a GitHub Fine-Grained Personal Access Token (PAT)
