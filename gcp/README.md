@@ -9,6 +9,7 @@ Key features:
 - Firewall rules configured for **IAP tunnel** access.  
 - **Cloud NAT** enabled for outbound internet access from private subnet.  
 - VM installs **Google Cloud SDK**, **kubectl**, **Helm**, and the **GitHub Actions runner** automatically.  
+- The runner can be used as a secure bastion for interactive access to the Kubernetes cluster.
 
 
 ![Architecture](./gcp_architecture.png)

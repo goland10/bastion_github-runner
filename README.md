@@ -5,10 +5,12 @@ This Terraform project automates the creation of a **secure self-hosted GitHub A
 
 Key features:  
 - Runner VM has **no public IP** and connects to GKE/EKS via private access.  
+
 - **Minimal IAM** permissions for GKE/EKS deployments and GitHub secret access.  
 - Firewall rules configured for **IAP tunnel** access.  
 - **Cloud NAT/NAT Gateway** enabled for outbound internet access from private subnet.  
-- VM equiped with **gcloud**, **kubectl**, **Helm**, **GitHub Actions runner** etc to fullfil all the tasks.  
+- VM equiped with **gcloud**, **kubectl**,**Helm**, **GitHub Actions runner** etc to fullfil all the tasks.  
+ - The runner can be used as a secure bastion for interactive access to the Kubernetes cluster.
 
 ---
 
