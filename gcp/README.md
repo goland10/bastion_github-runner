@@ -19,9 +19,9 @@ Key features:
 Before using this Terraform project, ensure the following:  
 1. A **GCP project** with billing enabled.  
 2. An **existing VPC network and subnet** where the runner VM will reside.  
-3. **Terraform CLI** installed on your workstation.
-4. **Secret Manager API enabled** on your GCP project
+3. **Secret Manager API enabled** on your GCP project
 4. **GitHub Personal Access Token (PAT)** stored in **Secret Manager**.  
+5. **Terraform CLI** installed on your workstation.
 
 ### Generating a GitHub Fine-Grained Personal Access Token (PAT)
 
@@ -41,7 +41,7 @@ To register a self-hosted runner, you need a GitHub fine-grained PAT with specif
 5. Under **Permissions**, click **Add permissions** and set the following repository permissions (minimum required):  
    - **Administration → Read and write** ✅  
    - **Actions → Read and write**  
-   - **Metadata → Read**  
+   - **Metadata → Read-only**  
 
 7. Click **Generate token**.  
 

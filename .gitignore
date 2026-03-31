@@ -1,5 +1,6 @@
 #chat.md
 *.drawio
+infra.tf
 # Terraform
 .terraform/
 *.tfstate

@@ -94,7 +94,7 @@ resource "google_compute_firewall" "runner_egress" {
 
   direction = "EGRESS"
   #priority = 
-  
+
   allow {
     protocol = "tcp"
     ports    = ["443"]
@@ -119,16 +119,16 @@ resource "google_compute_firewall" "runner_egress" {
 ############################
 
 resource "google_compute_instance" "runner" {
-  name         = "gha-runner"
-  machine_type = "e2-medium"
+  name         = var.bastion_name
+  machine_type = var.machine_type
   zone         = var.zone
 
   tags = ["github-runner"]
 
   boot_disk {
     initialize_params {
-      image = "projects/ubuntu-os-cloud/global/images/family/ubuntu-2404-lts-amd64"
-      size  = 30
+      image = var.boot_disk.image
+      size  = var.boot_disk.size
     }
   }
 
